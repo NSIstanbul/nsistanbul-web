@@ -165,6 +165,11 @@ nav a:hover {
 
 .logo {
     width: 100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-189px;
+    margin-left:-524px;
 }
 
 .logo img {
