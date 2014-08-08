@@ -66,9 +66,9 @@ font-family:'AvenirLTW02-35LightObli';
 ============================================= */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial, sans-serif;
-    background: #000;
-    color: #fff;
+    font: 16px/26px 'Avenir LT W01 95 Black', Helvetica, Helvetica Neue, Arial, sans-serif;
+    background: #fff;
+    color: #191919;
 }
 
 .wrapper {
@@ -76,57 +76,32 @@ body {
     margin: 0 5%;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    border-bottom: 20px solid #e44d26;
-}
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-}
-
-.title {
-    color: white;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
+.summer-hackday-title {
+    width: 40.83333333%;
+    margin: 30px auto 0 auto;
     display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
+}
 
+.register-button {
+    width: 40%;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 7px 0 #1AD823;
+    background-color: #87FC70;
     text-align: center;
+    color: #008CAF;
+    font-size: 225%;
+    padding: 52px 22px;
     text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
+    margin: 35px auto 25px auto;
 }
 
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
+span {
+    text-align: center;
+    color: #FFBC94;
+    font-size: 225%;
+    display: block;
+    margin: 0 auto 40px auto;
 }
 
 /* ==============
@@ -146,30 +121,12 @@ nav a:hover {
     padding: 0px 5% 10px;
 }
 
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
-}
-
 /* ===============
     ALL: IE Fixes
    =============== */
 
 .ie7 .title {
     padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-.logo {
-    width: 100%;
-    margin-top: 200px;
-}
-
-.logo img {
-    width: 100%;
 }
 
 
@@ -196,6 +153,37 @@ nav a:hover {
     section {
         margin-top: 42px;
     }
+
+    .summer-hackday-title {
+        width: 90%;
+        margin: 30px auto 0 auto;
+        display: block;
+    }
+
+    .register-button {
+        width: 90%;
+        border-radius: 4px;
+        box-shadow: 0 7px 0 #1AD823;
+        color: #008CAF;
+        text-decoration: none;
+    }
+
+    span {
+        margin: 0 auto 40px auto;
+    }
+
+    .summer-hackday-title,
+    .register-button,
+    span {
+        font-size: 150%;
+    }
+
+    .register-button {
+        padding: 20px 16px;
+        margin: 15px auto 20px auto;
+    }
+
+
 }
 
 
@@ -307,7 +295,7 @@ nav a:hover {
     }
 
     section p {
-        width: 80%;
+        width: 40%;
         font-size: 125%;
         display: block;
         margin: 0 auto 21px auto;
@@ -316,6 +304,32 @@ nav a:hover {
     section {
         margin-top: 42px;
     }
+
+    .summer-hackday-title {
+        width: 60%;
+        margin: 30px auto 0 auto;
+        display: block;
+    }
+
+    .register-button {
+        width: 60%;
+        border-radius: 4px;
+        box-shadow: 0 7px 0 #1AD823;
+        color: #008CAF;
+        text-decoration: none;
+    }
+
+    .summer-hackday-title,
+    .register-button,
+    span {
+        font-size: 225%;
+    }
+
+    .register-button {
+        padding: 30px 16px;
+        margin: 15px auto 20px auto;
+    }
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -338,10 +352,40 @@ nav a:hover {
     Maximal Width
    =============== */
 
+
+
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
+
+    .summer-hackday-title {
+    width: 40.83333333%;
+    margin: 30px auto 0 auto;
+    display: block;
+}
+
+.register-button {
+    width: 40%;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 7px 0 #1AD823;
+    background-color: #87FC70;
+    text-align: center;
+    color: #008CAF;
+    font-size: 225%;
+    padding: 52px 22px;
+    text-decoration: none;
+    margin: 35px auto 25px auto;
+}
+
+span {
+    text-align: center;
+    color: #FFBC94;
+    font-size: 225%;
+    display: block;
+    margin: 0 auto 40px auto;
+}
 }
 
 /* ==========================================================================
