@@ -1,0 +1,145 @@
+$nsistanbul-blue: #146DF5;
+@font-face {
+    font-family: 'Karmilla-Bold';
+    src: url('../fonts/karmilla-bold-015-webfont.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/karmilla-bold-015-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/karmilla-bold-015-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/karmilla-bold-015-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/karmilla-bold-015-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/karmilla-bold-015-webfont.svg#svgFontName') format('svg');
+    font-weight: regular;
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Karmilla';
+    src: url('../fonts/karmilla-regular-015-webfont.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/karmilla-regular-015-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/karmilla-regular-015-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/karmilla-regular-015-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/karmilla-regular-015-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/karmilla-regular-015-webfont.svg#svgFontName') format('svg');
+    font-weight: regular;
+    /* Legacy iOS */
+}
+
+body {
+    font-size: 16px;
+    background: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    height: 105px;
+    .logo {
+        margin-top: 41px;
+        margin-left: 8px;
+    }
+}
+
+section.main {
+    color: white;
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+    }
+    p {
+        font-family: 'Karmilla', sans-serif;
+    }
+}
+
+.description {
+    background-color: $nsistanbul-blue;
+    border-radius: 12px;
+    padding-bottom: 160px;
+    min-height: 660px;
+    h1 {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    p {
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 1.42;
+        font-weight: normal;
+        font-size: 1.25rem;
+    }
+}
+
+.next-event {
+    color: #434343;
+    font-family: "Karmilla-Bold", sans-serif;
+    letter-spacing: -0.6px;
+    h2 {
+        font-size: 24px;
+        font-weight: normal;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        margin-left: 8px;
+    }
+}
+
+.event-logo {
+    background-color: #434343;
+    height: 319px;
+    border-radius: 12px;
+    svg {
+        width: 84%;
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+.side-project-sunday {
+    .event-info {
+        padding-left: 12px;
+        h4 {
+            font-family: "Karmilla-Bold", sans-serif;
+            font-weight: normal;
+            letter-spacing: -1px;
+            font-size: 1.5rem;
+            margin: 0;
+            line-height: 37px;
+            margin-top: 30px;
+        }
+        h4.datetime,
+        address {
+            font-family: "Karmilla", sans-serif;
+            font-weight: normal;
+            letter-spacing: -1px;
+            font-size: 1.5rem;
+            margin: 0;
+            line-height: 37px;
+            font-style: normal;
+            color: #7a7a7a;
+        }
+        a {
+            font-size: 1.5rem;
+            color: $nsistanbul-blue;
+            margin-top: 12px;
+            display: inline-block;
+            padding-bottom: 64px;
+        }
+    }
+}
+
+footer {
+    margin-top: 30px;
+    height: 60px;
+    background-color: #efefef;
+    padding-top: 12px;
+    a {
+        color: #434343;
+        font-family: "Karmilla", sans-serif;
+        font-weight: normal;
+    }
+}
