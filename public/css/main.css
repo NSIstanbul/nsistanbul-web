@@ -1,522 +1,112 @@
-/* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
+@font-face {
+  font-family: 'Karmilla-Bold';
+  src: url("../fonts/karmilla-bold-015-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/karmilla-bold-015-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/karmilla-bold-015-webfont.woff2") format("woff2"), url("../fonts/karmilla-bold-015-webfont.woff") format("woff"), url("../fonts/karmilla-bold-015-webfont.ttf") format("truetype"), url("../fonts/karmilla-bold-015-webfont.svg#svgFontName") format("svg");
+  font-weight: regular;
+  /* Legacy iOS */ }
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
-
-body {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-img {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-/* ===== FONTS ===============================
-font-family:'Avenir LT W02 45 Book';
-font-family:'AvenirLTW02-35LightObli'; 
-============================================= */
+@font-face {
+  font-family: 'Karmilla';
+  src: url("../fonts/karmilla-regular-015-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/karmilla-regular-015-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/karmilla-regular-015-webfont.woff2") format("woff2"), url("../fonts/karmilla-regular-015-webfont.woff") format("woff"), url("../fonts/karmilla-regular-015-webfont.ttf") format("truetype"), url("../fonts/karmilla-regular-015-webfont.svg#svgFontName") format("svg");
+  font-weight: regular;
+  /* Legacy iOS */ }
 
 body {
-    font: 16px/26px 'Avenir LT W01 95 Black', Helvetica, Helvetica Neue, Arial, sans-serif;
-    background: #fff;
-    color: #191919;
-}
+  font-size: 16px;
+  background: white;
+  -webkit-font-smoothing: antialiased; }
 
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
+header {
+  height: 105px; }
+  header .logo {
+    margin-top: 41px;
+    margin-left: 8px; }
 
-.summer-hackday-title {
-    width: 40.83333333%;
-    margin: 30px auto 0 auto;
+section.main {
+  color: white; }
+  section.main h1 {
+    font-family: 'Montserrat', sans-serif; }
+  section.main p {
+    font-family: 'Karmilla', sans-serif; }
+
+.description {
+  background-color: #146DF5;
+  border-radius: 12px;
+  padding-bottom: 160px;
+  min-height: 660px; }
+  .description h1 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    font-size: 2.5rem;
+    font-weight: 800; }
+  .description p {
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 1.42;
+    font-weight: normal;
+    font-size: 1.25rem; }
+
+.next-event {
+  color: #434343;
+  font-family: "Karmilla-Bold", sans-serif;
+  letter-spacing: -0.6px; }
+  .next-event h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    margin-left: 8px; }
+
+.event-logo {
+  background-color: #434343;
+  height: 319px;
+  border-radius: 12px; }
+  .event-logo svg {
+    width: 84%;
     display: block;
-}
-
-.register-button {
-    width: 40%;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 7px 0 #1AD823;
-    background-color: #87FC70;
-    text-align: center;
-    color: #008CAF;
-    font-size: 225%;
-    padding: 52px 22px;
-    text-decoration: none;
-    margin: 35px auto 25px auto;
-}
-
-span {
-    text-align: center;
-    color: #FFBC94;
-    font-size: 225%;
-    display: block;
-    margin: 0 auto 40px auto;
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main {
-    padding: 30px 0;
-}
-
-.main article h1 {
-    font-size: 2em;
-}
-
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-
-@media only screen and (min-width: 280px) {
-
-    .main article {
-        width: 100%;
-        margin-top: 30px;
-    }
-
-    section p {
-        width: 100%;
-        font-size: 100%;
-        display: block;
-        margin: 0 auto 21px auto;
-        line-height: 1.5;
-    }
-
-    section {
-        margin-top: 42px;
-    }
-
-    .summer-hackday-title {
-        width: 90%;
-        margin: 30px auto 0 auto;
-        display: block;
-    }
-
-    .register-button {
-        width: 90%;
-        border-radius: 4px;
-        box-shadow: 0 7px 0 #1AD823;
-        color: #008CAF;
-        text-decoration: none;
-    }
-
-    span {
-        margin: 0 auto 40px auto;
-    }
-
-    .summer-hackday-title,
-    .register-button,
-    span {
-        font-size: 150%;
-    }
-
-    .register-button {
-        padding: 20px 16px;
-        margin: 15px auto 20px auto;
-    }
-
-
-}
-
-
-@media only screen and (min-width: 320px) {
-
-    .main article {
-        width: 100%;
-        margin-top: 40px;
-    }
-
-    section p {
-        width: 90%;
-        font-size: 150%;
-        display: block;
-        margin: 0 auto 21px auto;
-        line-height: 1.5;
-    }
-
-    section {
-        margin-top: 42px;
-    }
-}
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-   .main article {
-        width: 100%;
-        margin-top: 90px;
-    }
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-    section p {
-        width: 90%;
-        font-size: 150%;
-        display: block;
-        margin: 0 auto 21px auto;
-        line-height: 1.5;
-    }
-
-    section {
-        margin-top: 42px;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        width: 100%;
-        margin-top: 90px;
-    }
-
-    section p {
-        width: 40%;
-        font-size: 125%;
-        display: block;
-        margin: 0 auto 21px auto;
-        line-height: 1.5;
-    }
-    section {
-        margin-top: 42px;
-    }
-
-    .summer-hackday-title {
-        width: 60%;
-        margin: 30px auto 0 auto;
-        display: block;
-    }
-
-    .register-button {
-        width: 60%;
-        border-radius: 4px;
-        box-shadow: 0 7px 0 #1AD823;
-        color: #008CAF;
-        text-decoration: none;
-    }
-
-    .summer-hackday-title,
-    .register-button,
-    span {
-        font-size: 225%;
-    }
-
-    .register-button {
-        padding: 30px 16px;
-        margin: 15px auto 20px auto;
-    }
-
-}
-
-@media only screen and (min-width: 800px) {
-
-    section p {
-        width: 59.6875%;
-        font-size: 125%;
-        display: block;
-        margin: 0 auto 21px auto;
-        line-height: 1.5;
-    }
-    section {
-        margin-top: 42px;
-    }
-
-}
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
-
-    .summer-hackday-title {
-    width: 40.83333333%;
-    margin: 30px auto 0 auto;
-    display: block;
-}
-
-.register-button {
-    width: 40%;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 7px 0 #1AD823;
-    background-color: #87FC70;
-    text-align: center;
-    color: #008CAF;
-    font-size: 225%;
-    padding: 52px 22px;
-    text-decoration: none;
-    margin: 35px auto 25px auto;
-}
-
-span {
-    text-align: center;
-    color: #FFBC94;
-    font-size: 225%;
-    display: block;
-    margin: 0 auto 40px auto;
-}
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.side-project-sunday .event-info {
+  padding-left: 12px; }
+  .side-project-sunday .event-info h4 {
+    font-family: "Karmilla-Bold", sans-serif;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-size: 1.5rem;
     margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
+    line-height: 37px;
+    margin-top: 30px; }
+  .side-project-sunday .event-info h4.datetime,
+  .side-project-sunday .event-info address {
+    font-family: "Karmilla", sans-serif;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 37px;
+    font-style: normal;
+    color: #7a7a7a; }
+  .side-project-sunday .event-info a {
+    font-size: 1.5rem;
+    color: #146DF5;
+    margin-top: 12px;
+    display: inline-block;
+    padding-bottom: 64px; }
 
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+footer {
+  margin-top: 30px;
+  height: 60px;
+  background-color: #efefef;
+  padding-top: 12px; }
+  footer a {
+    color: #434343;
+    font-family: "Karmilla", sans-serif;
+    font-weight: normal; }
